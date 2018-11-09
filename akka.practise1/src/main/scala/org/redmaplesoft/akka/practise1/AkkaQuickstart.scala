@@ -1,5 +1,5 @@
 //#full-example
-package org.redmaplesoft.akka.practise1
+package org.redmaplesoft.akka.practise2
 
 import akka.actor.{Actor, ActorLogging, ActorRef, ActorSystem, Props}
 
