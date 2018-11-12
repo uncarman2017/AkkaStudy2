@@ -2,7 +2,7 @@ package org.redmaplesoft.akka.practise1;
 
 import akka.actor.Actor;
 import akka.actor.Props;
-import akka.actor.UntypedAbstractActor;
+import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.Creator;
@@ -11,7 +11,7 @@ import akka.japi.Creator;
  * @author Max Yu
  * @version 创建时间：2018/11/9 14:35
  */
-public class PropsDemoActor extends UntypedAbstractActor {
+public class PropsDemoActor extends UntypedActor {
     private LoggingAdapter log = Logging.getLogger(this.getContext().system(), this);
 
 

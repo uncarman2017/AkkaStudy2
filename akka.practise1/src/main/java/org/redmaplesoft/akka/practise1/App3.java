@@ -15,6 +15,6 @@ public class App3 {
         ActorSystem system = ActorSystem.create("sys");
         ActorRef actorRef = system.actorOf(Props.create(ForwardActor.class), "forwardActor");
         actorRef.tell("Max's visit", actorRef);
-
+        system.terminate();
     }
 }

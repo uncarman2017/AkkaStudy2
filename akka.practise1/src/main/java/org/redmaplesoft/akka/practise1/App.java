@@ -29,6 +29,6 @@ public class App {
         actorRef.tell(msg, ActorRef.noSender());
         actorRef2.tell("Hello PropsDemoActor", ActorRef.noSender());
 
-
+        system.terminate();
     }
 }

@@ -5,18 +5,18 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSelection;
 import akka.actor.Identify;
 import akka.actor.Props;
-import akka.actor.UntypedAbstractActor;
+import akka.actor.UntypedActor;
 
 /**
  * @author Max Yu
  * @version 创建时间：2018/11/9 16:26
  */
-public class LookupActor extends UntypedAbstractActor {
+public class LookupActor extends UntypedActor {
     private ActorRef target = getContext().actorOf(Props.create(TargetActor.class), "targetActor");
 
 
     @Override
-    public void onReceive(Object message) throws Throwable {
+    public void onReceive(Object message) throws Exception {
         if (message instanceof String) {
             if ("find".equals(message)) {
                 ActorSelection as = getContext().actorSelection("targetActor");

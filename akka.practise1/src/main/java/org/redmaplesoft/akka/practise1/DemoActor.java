@@ -1,17 +1,17 @@
 package org.redmaplesoft.akka.practise1;
 
 //import akka.actor.UntypedActor;
-import akka.actor.UntypedAbstractActor;
+import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 
 /**
  * @author Max Yu
  * @version 创建时间：2018/11/9 14:12
- * UntypedAbstractActor: 基于经典的Actor模型实现, 能完整表达Akka-Actor的设计思想
+ * UntypedActor: 基于经典的Actor模型实现, 能完整表达Akka-Actor的设计思想
  * TypedAbstractorActor:
  */
-public class DemoActor extends UntypedAbstractActor
+public class DemoActor extends UntypedActor
 {
     private LoggingAdapter log = Logging.getLogger(this.getContext().system(),this);
 

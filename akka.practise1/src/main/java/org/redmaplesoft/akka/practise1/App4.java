@@ -28,18 +28,20 @@ public class App4 {
         Future<ActorRef> fu = as.resolveOne(timeout);
         fu.onSuccess(new OnSuccess<ActorRef>() {
             @Override
-            public void onSuccess(ActorRef result) throws Throwable {
+            public void onSuccess(ActorRef result) throws Exception {
                 System.out.println("查找到Actor:" + result);
             }
         },system.dispatcher());
 
         fu.onFailure(new OnFailure() {
             @Override
-            public void onFailure(Throwable failure) throws Throwable {
+            public void onFailure(Throwable failure) throws Exception {
                 if(failure instanceof ActorNotFound){
                     System.out.println("没有找到Actor: " + failure.getMessage());
                 }
             }
         },system.dispatcher());
+
+        system.terminate();
     }
 }

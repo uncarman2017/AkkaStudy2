@@ -40,5 +40,6 @@ public class App2 {
         }, system.dispatcher());
 
         System.out.println("continue...");
+        system.terminate();
     }
 }

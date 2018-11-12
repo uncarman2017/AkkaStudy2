@@ -2,17 +2,17 @@ package org.redmaplesoft.akka.practise1;
 
 import akka.actor.ActorRef;
 import akka.actor.Props;
-import akka.actor.UntypedAbstractActor;
+import akka.actor.UntypedActor;
 
 /**
  * @author Max Yu
  * @version 创建时间：2018/11/9 15:52
  */
-public class ForwardActor extends UntypedAbstractActor {
+public class ForwardActor extends UntypedActor {
     private ActorRef target = getContext().actorOf(Props.create(TargetActor.class),"targetActor");
 
     @Override
-    public void onReceive(Object message) throws Throwable {
+    public void onReceive(Object message) throws Exception {
         System.out.println("Forward Actor receive: " + message + ", sender: " + getSender());
         target.forward(message,getContext());
     }
