@@ -1,4 +1,4 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch25;
 
 import akka.actor.ActorNotFound;
 import akka.actor.ActorRef;

@@ -1,8 +1,9 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch27;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import org.redmaplesoft.akka.practise1.Emp;
 
 /**
  * 2.7 Actor行为切换

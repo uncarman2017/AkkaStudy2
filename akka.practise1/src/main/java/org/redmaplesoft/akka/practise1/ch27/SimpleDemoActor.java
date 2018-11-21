@@ -1,7 +1,8 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch27;
 
 import akka.actor.UntypedActor;
 import akka.japi.Procedure;
+import org.redmaplesoft.akka.practise1.Emp;
 
 public class SimpleDemoActor extends UntypedActor {
     Procedure<Object> level1 = new Procedure<Object>() {

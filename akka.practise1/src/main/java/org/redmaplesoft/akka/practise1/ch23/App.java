@@ -1,17 +1,17 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch23;
 
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import org.redmaplesoft.akka.practise1.CommonMsg;
 
 
 /**
  * @author Max Yu
  * @version 创建时间：2018/11/9 14:24
  * 2.3 创建一个Actor
- * 2.4 发送-接收消息
- */
+  */
 public class App {
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch29;
 
 import akka.actor.ActorRef;
 import akka.actor.Props;
@@ -6,6 +6,7 @@ import akka.actor.Terminated;
 import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
+import org.redmaplesoft.akka.practise1.ch29.WorkerActor;
 
 public class WatchActor extends UntypedActor {
     LoggingAdapter log = Logging.getLogger(getContext().system(), this);

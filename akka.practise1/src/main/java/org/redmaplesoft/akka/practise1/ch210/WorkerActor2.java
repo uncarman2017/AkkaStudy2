@@ -1,4 +1,4 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch210;
 
 import akka.actor.UntypedActor;
 import scala.Option;
@@ -17,8 +17,6 @@ public class WorkerActor2 extends UntypedActor {
         super.postStop();
         System.out.println("Worker actor postStop");
     }
-
-
 
     @Override
     public void preRestart(Throwable reason, Option<Object> message) throws Exception {

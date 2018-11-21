@@ -1,6 +1,5 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch23;
 
-import akka.actor.Actor;
 import akka.actor.Props;
 import akka.actor.UntypedActor;
 import akka.event.Logging;
@@ -35,7 +34,6 @@ public class PropsDemoActor extends UntypedActor {
     public static Props createProps() {
         return Props.create(new Creator<PropsDemoActor>() {
 
-            @Override
             public PropsDemoActor create() throws Exception {
                 return new PropsDemoActor();
             }

@@ -1,4 +1,4 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch25;
 
 import akka.actor.ActorIdentity;
 import akka.actor.ActorRef;
@@ -6,6 +6,7 @@ import akka.actor.ActorSelection;
 import akka.actor.Identify;
 import akka.actor.Props;
 import akka.actor.UntypedActor;
+import org.redmaplesoft.akka.practise1.ch24.TargetActor;
 
 /**
  * @author Max Yu

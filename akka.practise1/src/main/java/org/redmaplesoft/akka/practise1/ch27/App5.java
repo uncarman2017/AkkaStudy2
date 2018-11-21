@@ -1,4 +1,4 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch27;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;

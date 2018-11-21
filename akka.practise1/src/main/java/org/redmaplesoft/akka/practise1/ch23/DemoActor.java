@@ -1,9 +1,10 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch23;
 
 //import akka.actor.UntypedActor;
 import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
+import org.redmaplesoft.akka.practise1.CommonMsg;
 
 /**
  * @author Max Yu

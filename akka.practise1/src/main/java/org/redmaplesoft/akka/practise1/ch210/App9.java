@@ -1,4 +1,4 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch210;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -14,7 +14,7 @@ public class App9 {
 
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("sys");
-        ActorRef workerActor = system.actorOf(Props.create(WorkerActor2.class), "workerActor");
+        ActorRef workerActor = system.actorOf(Props.create(WorkerActor2.class), "workerActor2");
         workerActor.tell(new IOException(), ActorRef.noSender());
         System.out.println("===================================================");
         workerActor.tell("getvalue", ActorRef.noSender());

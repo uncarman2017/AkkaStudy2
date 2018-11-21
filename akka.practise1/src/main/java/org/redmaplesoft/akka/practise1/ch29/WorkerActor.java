@@ -1,4 +1,4 @@
-package org.redmaplesoft.akka.practise1;
+package org.redmaplesoft.akka.practise1.ch29;
 
 import akka.actor.UntypedActor;
 import akka.event.Logging;
