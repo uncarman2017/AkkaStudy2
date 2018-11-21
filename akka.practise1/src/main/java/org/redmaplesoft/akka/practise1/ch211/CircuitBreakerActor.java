@@ -31,6 +31,6 @@ public class CircuitBreakerActor extends UntypedActor {
 
     @Override
     public void onReceive(Object message) throws Exception {
-        workerChild.tell(message,getSender());
+        workerChild.tell(message,getSelf());
     }
 }

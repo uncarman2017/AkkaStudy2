@@ -44,7 +44,6 @@ public class WorkerActor3 extends UntypedActor {
             if(msg.startsWith("sync")){
                 getSender().tell(breaker.callWithSyncCircuitBreaker(
                         new Callable<String>() {
-
                             public String call() throws Exception {
                                 System.out.println("msg:" + msg);
                                 Thread.sleep(3000);
